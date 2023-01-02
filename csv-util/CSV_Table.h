@@ -42,30 +42,31 @@ public:
 	std::string getElement(const uint32_t row, const uint32_t column);
 	
 	/**
-	* Retrieves specified element
+	* Retrieves specified element as integer
 	*
 	* @param row - The row of the element
 	* @param column - The column of the element
 	*
 	* @throws InvalidArugment If the index is out of bounds
+	* @thrwos stoi conversion error
 	*
-	* @result String containing specified element,
-	*		  Empty string if error
+	* @result Integer representation of specified element
 	*/
 	int getElementInt(const uint32_t row, const uint32_t column);
+	
 	/**
-	* Retrieves specified element
+	* Retrieves specified element as float
 	*
 	* @param row - The row of the element
 	* @param column - The column of the element
 	*
 	* @throws InvalidArugment If the index is out of bounds
+	* @throws stof conversion error
 	*
-	* @result String containing specified element,
-	*		  Empty string if error
+	* @result Float representation of specified element
 	*/
-
 	float getElementFloat(const uint32_t row, const uint32_t column);
+
 	/**
 	* Retrieves specified element
 	*
@@ -73,9 +74,9 @@ public:
 	* @param column - The column of the element
 	*
 	* @throws InvalidArugment If the index is out of bounds
+	* @throws stod conversion error
 	*
-	* @result String containing specified element,
-	*		  Empty string if error
+	* @result Double representation of specified element
 	*/
 	double getElementDouble(const uint32_t row, const uint32_t column);
 
