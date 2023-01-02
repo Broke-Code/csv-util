@@ -26,15 +26,19 @@ int main(void)
 	}
 
 	// Getting an element examples:
-	std::string eStr = tab.getElement(0, 0);				//  Gets a string representation of element at 0,0
-	int eInt =		   tab.getElementInt(1, 4);				//  Gets a integer representation of element at 1,4
+	std::string eStr = tab.getElement(0, 0);			//  Gets a string representation of element at 0,0
+	int eInt =		   tab.getElementInt(1, 4);		//  Gets a integer representation of element at 1,4
 	float eFloat =	   tab.getElementFloat(1, 5);			//  Gets a float representation of element at 1,5
 	double eDouble =   tab.getElementDouble(1, 9);			//  Gets a double representation of element at 1,9
 
-	std::cout	<< eStr << '\n'
-				<< eInt << '\n'
-				<< eFloat << '\n'
-				<< eDouble << std::endl;
+	
+	// Cheeky whitespace formatting
+	std::cout	
+		<< eStr << '\n'
+		<< eInt << '\n'
+		<< eFloat << '\n'
+		<< eDouble << 
+	std::endl;
 
 	// Example error catching
 	try
