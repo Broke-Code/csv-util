@@ -1,4 +1,4 @@
-# csv-util
+# CSV Utility
 Load and process data stored in a csv file
 
 Features:
